@@ -1,0 +1,104 @@
+/**
+ * Folha de estilo customizada do site...
+ * @author Seu Nome
+ */
+
+/* Layout */
+.flexFooter {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Smartphone Portrait */
+
+/*
+body {
+    background-color: #00ffff;
+}
+*/
+
+/** Banner **/
+main {
+  background: url(img/background.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Rodapé */
+footer {
+  padding: 50px 0px;
+  background-color: #343538;
+  color: #fff;
+  text-align: center;
+}
+
+#social {
+  margin-bottom: 25px;
+}
+
+/* Smartphone Landscape */
+@media (min-width: 576px) {
+  /*
+    body {
+        background-color: #ffff00;
+    }
+    */
+
+  /* Banner */
+  main {
+    height: 100vh;
+  }
+
+  .destaque{
+    height: 50vh;
+  }
+
+  .conteudo {
+    background: url(img/bgNike.png);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /* Rodapé */
+  .flexFooter {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) {
+  /*
+    body {
+        background-color: #ff00c8;
+        color: #ffffff;
+    }
+    */
+}
+
+/* Tablet Landscape */
+@media (min-width: 992px) {
+  /*
+    body {
+        background-color: #484955;        
+    }
+    */
+}
+
+/* Notebooks/PCs/SmartTV */
+@media (min-width: 1200px) {
+  /*
+    body {
+        background-color: #fff; 
+        color: #000;       
+    }
+    */
+}
